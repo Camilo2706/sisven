@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <title>Agregar Categoría</title>
-</head>
-<body>
+@section('content')
     <div class="container">
         <h1>Agregar Categoría</h1>
         <form method="POST" action="{{ route('categories.store') }}">
@@ -32,5 +22,4 @@
             </div>
         </form>
     </div>
-</body>
-</html>
+@endsection
