@@ -72,6 +72,13 @@
             </x-responsive-nav-link>
         </div>
 
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+    <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories.index')">
+        {{ __('Categorías') }}
+    </x-nav-link>
+</div>
+
+
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
             <div class="px-4">
